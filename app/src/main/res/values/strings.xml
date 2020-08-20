@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ToasterExample</string>
+    <string name="slogan">As vezes só precisamos de alguém para conversar</string>
+    <string name="aux1">Não fique só.</string>
+    <string name="aux2">Não corra perigo.</string>
+    <string name="aux3">Busque ajuda.</string>
+    <string name="call_180">Chamar 180</string>
+    <string name="call_security">Chamar seguro</string>
 </resources>
