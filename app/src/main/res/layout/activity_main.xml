@@ -36,15 +36,15 @@
             android:paddingBottom="15dip">
 
             <ImageView
-                android:id="@+id/numberDays"
+                android:id="@+id/dismissView"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="30dp"
-                android:layout_marginBottom="30dp"
+                android:scaleType="fitStart"
                 android:src="@drawable/web_close_btn" />
 
             <ImageView
-                android:id="@+id/daysText"
+                android:id="@+id/logoTop"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="60dp"
@@ -70,7 +70,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/logoBottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_web_together"
