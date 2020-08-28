@@ -17,11 +17,6 @@ import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
 
-    override fun onStart() {
-        super.onStart()
-        supportActionBar!!.hide()
-    }
-
     companion object {
         const val REQUEST_CALL: Int = 101
         const val REQUEST_CONTACT: Int = 201
@@ -53,19 +48,6 @@ class MainActivity : AppCompatActivity() {
         val callSecurity: Button = findViewById(R.id.callSecurity)
         callSecurity.setOnClickListener{
             requestPermission(false)
-        }
-    }
-
-    override fun onWindowFocusChanged(hasFocus: Boolean) {
-        super.onWindowFocusChanged(hasFocus)
-        if (hasFocus) {
-            window.decorView.systemUiVisibility = (
-                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                            or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                            or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                            or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                            or View.SYSTEM_UI_FLAG_FULLSCREEN
-                            or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
         }
     }
 
